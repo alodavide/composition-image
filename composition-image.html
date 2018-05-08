@@ -16,52 +16,52 @@
       }
     </style>
 
+    <div>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.0)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.0}} x </text>
+          <circle cx="70" cy="35" r="25" stroke="black" fill="white" />
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.0)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.0}} x </text>
-        <circle cx="70" cy="35" r="25" stroke="black" fill="white" />
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.1)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.1}} x </text>
+          <rect x="45" y="10" width="50" height="50" stroke="black" fill="white"/>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.1)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.1}} x </text>
-        <rect x="45" y="10" width="50" height="50" stroke="black" fill="white"/>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.2)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.2}} x </text>
+          <polygon points="55,10 30,60 80,60" stroke="black" fill="white"/>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.2)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.2}} x </text>
-        <polygon points="55,10 30,60 80,60" stroke="black" fill="white"/>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.3)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.3}} x </text>
+          <rect x="10" y="10" width="35" height="35" stroke="black" fill="purple" transform="translate(65) rotate(45) "/>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.3)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.3}} x </text>
-        <rect x="10" y="10" width="35" height="35" stroke="black" fill="purple" transform="translate(65) rotate(45) "/>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.4)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.4}} x </text>
+          <rect x="10" y="10" width="35" height="35" stroke="black" fill="blue" transform="translate(65) rotate(45) "/>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.4)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.4}} x </text>
-        <rect x="10" y="10" width="35" height="35" stroke="black" fill="blue" transform="translate(65) rotate(45) "/>
-      </svg>
-    </template>
-
-    <template is="dom-if" if="{{checkAbsence(compositionArray.5)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.5}} x </text>
-        <path  d="
+      <template is="dom-if" if="{{checkAbsence(compositionArray.5)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.5}} x </text>
+          <path  d="
 M 60.000 52.000
 L 77.634 64.271
 L 71.413 43.708
@@ -74,79 +74,80 @@ L 48.587 43.708
 L 42.366 64.271
 L 60.000 52.000
 " stroke="black" fill="white" transform="translate(10) "/>
-      </svg>
-    </template>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.6)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.6}} x </text>
-        <text class="substituent" x="40" y="45" >S</text>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.6)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.6}} x </text>
+          <text class="substituent" x="40" y="45" >S</text>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.7)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.7}} x </text>
-        <text class="substituent" x="40" y="45" >P</text>
-      </svg>
-    </template>
-
-
-    <template is="dom-if" if="{{checkAbsence(compositionArray.8)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.8}} x </text>
-        <rect x="10" y="10" width="35" height="35" stroke="black" fill="green" transform="translate(65) rotate(45) "/>
-      </svg>
-    </template>
-
-    <template is="dom-if" if="{{checkAbsence(compositionArray.9)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.9}} x </text>
-        <polygon points="90,40 75,65 45,65 30,40 45,15 75,15" stroke="black" fill="yellow" transform="translate(10)"></polygon>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.7)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.7}} x </text>
+          <text class="substituent" x="40" y="45" >P</text>
+        </svg>
+      </template>
 
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.10)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <linearGradient id="diagonalGrad" x1="0%" y1="0%" x2="100%" y2="100%" spreadMethod="pad">
-          <stop offset="48%" stop-color="#fff" stop-opacity="1"></stop>
-          <stop offset="50%" stop-color="#000" stop-opacity="1"></stop>
-          <stop offset="52%" stop-color="#fff" stop-opacity="1"></stop>
-        </linearGradient>
-        <text x="0" y="40" >{{compositionArray.10}} x </text>
-        <rect x="10" y="10" width="35" height="35" stroke="black" fill="url(#diagonalGrad)" transform="translate(65) rotate(45) "/>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.8)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.8}} x </text>
+          <rect x="10" y="10" width="35" height="35" stroke="black" fill="green" transform="translate(65) rotate(45) "/>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.11)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text class="text" x="0" y="40" >{{compositionArray.11}} x </text>
-        <text class="substituent" x="40" y="45" >Me</text>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.9)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.9}} x </text>
+          <polygon points="90,40 75,65 45,65 30,40 45,15 75,15" stroke="black" fill="yellow" transform="translate(10)"></polygon>
+        </svg>
+      </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.12)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.12}} x </text>
-        <text class="substituent" x="40" y="45" >Ac</text>
-      </svg>
-    </template>
 
-    <template is="dom-if" if="{{checkAbsence(compositionArray.13)}}">
-      <svg width="50" height="50" viewBox="0 0 100 100"
-           xmlns="http://www.w3.org/2000/svg">
-        <text x="0" y="40" >{{compositionArray.13}} x </text>
-        <text class="substituent" x="40" y="45" >Other</text>
-      </svg>
-    </template>
+      <template is="dom-if" if="{{checkAbsence(compositionArray.10)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <linearGradient id="diagonalGrad" x1="0%" y1="0%" x2="100%" y2="100%" spreadMethod="pad">
+            <stop offset="48%" stop-color="#fff" stop-opacity="1"></stop>
+            <stop offset="50%" stop-color="#000" stop-opacity="1"></stop>
+            <stop offset="52%" stop-color="#fff" stop-opacity="1"></stop>
+          </linearGradient>
+          <text x="0" y="40" >{{compositionArray.10}} x </text>
+          <rect x="10" y="10" width="35" height="35" stroke="black" fill="url(#diagonalGrad)" transform="translate(65) rotate(45) "/>
+        </svg>
+      </template>
+
+      <template is="dom-if" if="{{checkAbsence(compositionArray.11)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text class="text" x="0" y="40" >{{compositionArray.11}} x </text>
+          <text class="substituent" x="40" y="45" >Me</text>
+        </svg>
+      </template>
+
+      <template is="dom-if" if="{{checkAbsence(compositionArray.12)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.12}} x </text>
+          <text class="substituent" x="40" y="45" >Ac</text>
+        </svg>
+      </template>
+
+      <template is="dom-if" if="{{checkAbsence(compositionArray.13)}}">
+        <svg width="50" height="50" viewBox="0 0 100 100"
+             xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="40" >{{compositionArray.13}} x </text>
+          <text class="substituent" x="40" y="45" >Other</text>
+        </svg>
+      </template>
+    </div>
   </template>
 
   <script>
